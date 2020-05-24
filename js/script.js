@@ -18,9 +18,9 @@
 
 document.addEventListener("DOMContentLoaded", function() {
   // Get all "navbar-burger" elements
-  var $navbarBurgers = Array.prototype.slice.call(
-    document.querySelectorAll(".navbar-burger"),
-    0
+  const $navbarBurgers = Array.prototype.slice.call(
+      document.querySelectorAll(".navbar-burger"),
+      0
   );
   // Check if there are any navbar burgers
   if ($navbarBurgers.length > 0) {
@@ -28,8 +28,8 @@ document.addEventListener("DOMContentLoaded", function() {
     $navbarBurgers.forEach(function($el) {
       $el.addEventListener("click", function() {
         // Get the target from the "data-target" attribute
-        var target = $el.dataset.target;
-        var $target = document.getElementById(target);
+        const target = $el.dataset.target;
+        const $target = document.getElementById(target);
         // Toggle the class on both the "navbar-burger" and the "navbar-menu"
         $el.classList.toggle("is-active");
         $target.classList.toggle("is-active");
@@ -61,56 +61,13 @@ function scrollFunction() {
     document.getElementById("toTop").style.display = "none";
   }
 }
-
-//copy function
-function copyBitcoinAddress() {
-  var copyText = document.getElementById("bitcoin");
-
-  copyText.select();
-  copyText.setSelectionRange(0, 99999); /*For mobile devices*/
-
-  document.execCommand("copy");
-  alert("Successfully Copied!");
-}
-
-function copyEthereumAddress() {
-  var copyText = document.getElementById("ethereum");
+// Copy donation info to user's clipboard
+function copyDonationToClipboard(element) {
+  const copyText = document.getElementById(element);
 
   copyText.select();
-  copyText.setSelectionRange(0, 99999); /*For mobile devices*/
-
+  copyText.setSelectionRange(0, 99999);
   document.execCommand("copy");
+
   alert("Successfully Copied!");
 }
-
-function copyLitecoinAddress() {
-  var copyText = document.getElementById("litecoin");
-
-  copyText.select();
-  copyText.setSelectionRange(0, 99999); /*For mobile devices*/
-
-  document.execCommand("copy");
-  alert("Successfully Copied!");
-}
-
-function copyMoneroAddress() {
-  var copyText = document.getElementById("monero");
-
-  copyText.select();
-  copyText.setSelectionRange(0, 99999); /*For mobile devices*/
-
-  document.execCommand("copy");
-  alert("Successfully Copied!");
-}
-
-function copyPaypalAddress() {
-  var copyText = document.getElementById("paypal");
-
-  copyText.select();
-  copyText.setSelectionRange(0, 99999); /*For mobile devices*/
-
-  document.execCommand("copy");
-  alert("Successfully Copied!");
-}
- 
-

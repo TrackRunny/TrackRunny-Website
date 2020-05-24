@@ -213,7 +213,7 @@
                 <h2>
                   Bitcoin<br />
                   <input type="text" value="37Jj1FaweEPyqRdMRjY8fxAaqCyN6wCxxU" id="bitcoin">
-                  <button class="button is-info" onclick="copyBitcoinAddress()">
+                  <button class="button is-info" onclick="copyDonationToClipboard('bitcoin')">
                     Copy
                   </button>
                 </h2>
@@ -230,7 +230,7 @@
                 <h2>
                   Ethereum:<br />
                   <input type="text" value="0x493c8eb32fc18E355ddAffD0B0215689B0b4ed3e" id="ethereum">
-                  <button class="button is-info" onclick="copyEthereumAddress()">Copy</button>
+                  <button class="button is-info" onclick="copyDonationToClipboard('ethereum')">Copy</button>
                 </h2>
               </div>
               <div
@@ -245,7 +245,7 @@
                 <h2>
                   Litecoin:<br/>
                   <input type="text" value="MAAQELK7Pqb6C6doUxRWhaVv9W5iqWdN4M" id="litecoin">
-                  <button class="button is-info" onclick="copyLitecoinAddress()">Copy</button>
+                  <button class="button is-info" onclick="copyDonationToClipboard('litecoin')">Copy</button>
                 </h2>
               </div>
             </div>
@@ -261,7 +261,7 @@
                 <h2>
                   Monero:<br />
                   <input type="text" value="438eCyrf9nAibzQRnbj4m68Cm61z3kWXNUBrbS8TxPLqYvJ1Law55VaaJmxfQ4bbAhSEo3AWY4WfxQRckjiDqis5LhqXdMo" id="monero">
-                  <button class="button is-info" onclick="copyMoneroAddress()">Copy</button>
+                  <button class="button is-info" onclick="copyDonationToClipboard('monero')">Copy</button>
                 </h2>
               </div>
             <div
@@ -275,7 +275,7 @@
                 <hr />
                 <h2>
                   Paypal:<br />
-                  <input type="text" value="https://www.paypal.me/TrackRunnyy" id="paypal"> <button class="button is-info" onclick="copyPaypalAddress()">Copy</button>
+                  <input type="text" value="https://www.paypal.me/TrackRunnyy" id="paypal"> <button class="button is-info" onclick="copyDonationToClipboard('paypal')">Copy</button>
                 </h2>
             </div>
             </div>
@@ -318,7 +318,6 @@
     <!-- Scripts -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="js/script.js"></script>
-    <script src="https://trackrunny.glitch.me/dist/clipboard.min.js"></script>
     <link
       href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css"
       rel="stylesheet"
