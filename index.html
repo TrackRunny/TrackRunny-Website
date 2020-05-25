@@ -18,7 +18,8 @@
 
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
+    <!-- SE Optimizations -->
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -30,10 +31,8 @@
     <meta property="og:description" content="Personal website for TrackRunny with information about himself. Check back regularly for any new news / updates that are happening." />
     <meta name="theme-color" content="#1F2C6C" />
     <title>TrackRunny</title>
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/bulma@0.8.0/css/bulma.min.css"
-    />
+    <!-- Stylesheets & Icons -->
+    <link rel="stylesheet" href="https://unpkg.com/bulma@0.8.0/css/bulma.min.css"/>
     <link rel="stylesheet" type="text/css" href="css/style.css" />
     <script
       src="https://kit.fontawesome.com/2828f7885a.js"
@@ -41,7 +40,7 @@
       crossorigin="anonymous"
     ></script>
     <link rel="icon" type="image/ico" href="https://cdn.glitch.com/06ef4909-87d5-433a-b836-771ef6888cf6%2Ffavicon.ico?v=1589874512589" />
-  </head>
+</head>
 
   <body>
     <!-- Begin Scroll Up Button -->
@@ -174,116 +173,120 @@
             </div>
             <div class="column is-10 has-text-centered is-offset-1">
               <h2 class="subtitle">
-                Website has began launch 🎉! We have a clearnet domain: https://trackrunny.codes
-                <br>
-                For those of you who use tor we have a onion address to: track6mven4pa32vseoxa62tpbaeirlwloz2i4lgwfpvwvrf6gkohsid.onion 
+                No exciting news yet! Stay updated and maybe I'll post something eventually 🤣
               </h2>
             </div>
           </div>
         </div>
       </div>
       
-      <!-- Begin Support Content -->
-      <div class="section-color support" id="support">
-        <div class="container">
-          <div class="columns is-multiline">
-            <div
-              class="column is-12 about-me"
-              data-aos="fade-in"
-              data-aos-easing="linear"
-            >
-              <h1 class="title has-text-centered section-title">Support Me!</h1>
-
-              <h2 class="subtitle">
-                If you like some of the work I do (or got some cash money laying around 😎💲) fell free to support me with any of these payment methods.
-                Donations are not expected but are always welcomed 👌.
-              </h2>
-              <br />
-            </div>
-            <div class="columns is-12">
-              <div
-                class="column is-4 has-text-centered"
-                data-aos="fade-in"
-                data-aos-easing="linear"
-              >
-                <img
-                  src="img/Bitcoin.png"
-                />
-                <hr />
-                <h2>
-                  Bitcoin<br />
-                  <input type="text" value="37Jj1FaweEPyqRdMRjY8fxAaqCyN6wCxxU" id="bitcoin">
-                  <button class="button is-info" onclick="copyDonationToClipboard('bitcoin')">
-                    Copy
-                  </button>
-                </h2>
-              </div>
-              <div
-                class="column is-4 has-text-centered"
-                data-aos="fade-in"
-                data-aos-easing="linear"
-              >
-                <img
-                  src="img/Ethereum.png"
-                />
-                <hr />
-                <h2>
-                  Ethereum:<br />
-                  <input type="text" value="0x493c8eb32fc18E355ddAffD0B0215689B0b4ed3e" id="ethereum">
-                  <button class="button is-info" onclick="copyDonationToClipboard('ethereum')">Copy</button>
-                </h2>
-              </div>
-              <div
-                class="column is-4 has-text-centered"
-                data-aos="fade-in"
-                data-aos-easing="linear"
-              >
-                <img
-                  src="img/Litecoin.png"
-                />
-                <hr />
-                <h2>
-                  Litecoin:<br/>
-                  <input type="text" value="MAAQELK7Pqb6C6doUxRWhaVv9W5iqWdN4M" id="litecoin">
-                  <button class="button is-info" onclick="copyDonationToClipboard('litecoin')">Copy</button>
-                </h2>
-              </div>
-            </div>
-              <div
-                class="column is-4 has-text-centered"
-                data-aos="fade-in"
-                data-aos-easing="linear"
-              >
-                <img
-                  src="img/Monero.png"
-                />
-                <hr />
-                <h2>
-                  Monero:<br />
-                  <input type="text" value="438eCyrf9nAibzQRnbj4m68Cm61z3kWXNUBrbS8TxPLqYvJ1Law55VaaJmxfQ4bbAhSEo3AWY4WfxQRckjiDqis5LhqXdMo" id="monero">
-                  <button class="button is-info" onclick="copyDonationToClipboard('monero')">Copy</button>
-                </h2>
-              </div>
-            <div
-                class="column is-3 has-text-centered"
-                data-aos="fade-in"
-                data-aos-easing="linear"
-              >
-                <img
-                  src="img/Paypal.png" width="128" height="128"
-                />
-                <hr />
-                <h2>
-                  Paypal:<br />
-                  <input type="text" value="https://www.paypal.me/TrackRunnyy" id="paypal"> <button class="button is-info" onclick="copyDonationToClipboard('paypal')">Copy</button>
-                </h2>
-            </div>
-            </div>
+	<!-- End News Content -->
+      
+	<!-- Begin Support Content -->
+	<div class="section-color support" id="support">
+    <div class="container">
+       <div class="columns is-multiline">
+          <div class="column is-12 about-me" data-aos="fade-in" data-aos-easing="linear">
+   
+           <!-- Support Content Title -->
+             <h1 class="title has-text-centered section-title">
+                SUPPORT ME
+             </h1>
+             
+             <!-- Support Content Subtitle -->
+             <h2 class="subtitle has-text-centered small-desc">
+                Fell free to support me with any of these payment methods.<br/>
+                Donations are not expected but are always welcomed.
+             </h2>
+ 
+             <br />
           </div>
-        </div>
-      </div>
-    
-      <!-- End Support Content -->
+ 
+          <div class="columns is-12">
+   
+             <!-- Bitcoin Address -->
+       &emsp;&emsp;
+             <div class="column is-4 has-text-centered" data-aos="fade-in" data-aos-easing="linear">
+                <img src="img/Bitcoin.png" width="128" height="128"/>
+                <hr />
+ 
+                <h2>
+                   Bitcoin:<br />
+                   <input type="text" value="37Jj1FaweEPyqRdMRjY8fxAaqCyN6wCxxU" id="bitcoin"><br/>
+                   <button class="button is-info" onclick="copyDonationToClipboard('bitcoin')">
+                   Copy
+                   </button>
+                </h2>
+ 
+             </div>
+ 
+             <!-- Ethereum Address -->
+             <div class="column is-4 has-text-centered" data-aos="fade-in" data-aos-easing="linear">
+                <img src="img/Ethereum.png" width="128" height="128"/>
+                <hr />
+ 
+                <h2>
+                   Ethereum:<br />
+                   <input type="text" value="0x493c8eb32fc18E355ddAffD0B0215689B0b4ed3e" id="ethereum">
+                   <button class="button is-info" onclick="copyDonationToClipboard('ethereum')">
+                   Copy
+                   </button>
+                </h2>
+ 
+             </div>
+ 
+             <!-- Litecoin Address -->
+             <div class="column is-4 has-text-centered" data-aos="fade-in" data-aos-easing="linear">
+                <img src="img/Litecoin.png" width="128" height="128"/>
+                <hr />
+ 
+                <h2>
+                   Litecoin:<br/>
+                   <input type="text" value="MAAQELK7Pqb6C6doUxRWhaVv9W5iqWdN4M" id="litecoin">
+                   <button class="button is-info" onclick="copyDonationToClipboard('litecoin')">
+                   Copy
+                   </button>
+                </h2>
+ 
+             </div>
+          </div>
+     
+      &emsp;&emsp;
+          <!-- Monero Addreas -->
+          <div class="column is-4 has-text-centered" data-aos="fade-in" data-aos-easing="linear">
+             <img src="img/Monero.png" width="128" height="128"/>
+             <hr />
+ 
+             <h2>
+                Monero:<br />
+                <input type="text" value="438eCyrf9nAibzQRnbj4m68Cm61z3kWXNUBrbS8TxPLqYvJ1Law55VaaJmxfQ4bbAhSEo3AWY4WfxQRckjiDqis5LhqXdMo" id="monero"><br/>
+                <button class="button is-info" onclick="copyDonationToClipboard('monero')">
+                Copy
+                </button>
+             </h2>
+ 
+          </div>
+     
+          <!-- Paypal Address -->
+          <div class="column is-4 has-text-centered" data-aos="fade-in" data-aos-easing="linear">
+             <img src="img/Paypal.png" width="128" height="128"/>
+             <hr />
+ 
+             <h2>
+                Paypal:<br />
+                <input type="text" value="https://www.paypal.me/TrackRunnyy" id="paypal"><br/>
+                <button class="button is-info" onclick="copyDonationToClipboard('paypal')">
+                Copy
+                </button>
+             </h2>
+ 
+          </div>
+ 
+       </div>
+    </div>
+ </div>
+ </div>
+ <!-- End Support Content -->
       
       <!-- Begin Contact Content -->
       <div class="section-lignt contact" id="contact">
@@ -298,7 +301,10 @@
                   <i class="fab fa-discord"></i> <code>TrackRunny#0001</code><br/>
                 </a>
                 <a href="https://github.com/TrackRunny" target="_blank" style="color: inherit;">
-                  <i class="fab fa-github"></i> <code>github.com/TrackRunny</code>
+                  <i class="fab fa-github"></i> <code>github.com/TrackRunny</code><br/>
+                </a>
+                <a target="_blank" style="color: inherit;">
+                  <img class="tor-picture" src="img/Tor.png"> <code class="tor-url">track6mven4pa32vseoxa62tpbaeirlwloz2i4lgwfpvwvrf6gkohsid.onion</code>
                 </a>
               </h2>
               <br/>

@@ -124,6 +124,19 @@ html {
   padding: 45px 0px;
 }
 
+@media (max-width: 868px) {
+  .tor-picture {
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    visibility: hidden;
+  }
+}
+
+.tor-picture {
+  margin-bottom: -3px;
+}
+
 .main-content .section-dark .contact {
   height: 400px;
   padding-top: 100px;
