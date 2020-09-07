@@ -38,16 +38,30 @@ document.addEventListener("DOMContentLoaded", function() {
   }
 });
 
-// Smooth Anchor Scrolling
-$(document).on("click", 'a[href^="#"]', function(event) {
-  event.preventDefault();
-  $("html, body").animate(
-    {
-      scrollTop: $($.attr(this, "href")).offset().top
-    },
-    500
-  );
-});
+//Smooth anchor scrolling v2 - courtesy of exynosnetwork xD
+$('a[href*="#"]')
+  .not('[href="#"]')
+  .not('[href="#0"]')
+  .click(function(event) {
+    if (
+      location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') 
+      && 
+      location.hostname == this.hostname
+    ) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+      if (target.length) {
+        event.preventDefault();
+        $('html, body').animate({
+          scrollTop: target.offset().top
+        }, 1000, function() {
+          var $target = $(target);
+          $target.focus();
+        });
+      }
+    }
+  });
+
 
 // When the user scrolls down 20px from the top of the document, show the scroll up button
 window.onscroll = function() {
